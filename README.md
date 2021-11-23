@@ -100,8 +100,9 @@ helm upgrade --install vault hashicorp/vault \
 ```
 
 ## Create a test Secret for the Deployment
+```
 vault kv put secret/hello foo=world
-
+```
 
 ## Install a Test Deployment which injects the previously created secret from Vault into the Container
 ### 1. Deploy the Container
